@@ -1,0 +1,359 @@
+--// Steal An Egg - Egg Database
+--// สำหรับเกม/โปรเจกต์ Roblox ที่คุณเป็นผู้พัฒนา
+
+local EggDatabase = {
+
+    Zones = {
+
+        Forest = {
+            Speed = 0,
+            Eggs = {
+                {"Chicken Egg", "Common"},
+                {"Dog Egg", "Common"},
+                {"Bird Egg", "Uncommon"},
+                {"Burrowing Owl Egg", "Rare"},
+                {"Raccoon Egg", "Rare"},
+                {"Fox Egg", "Epic"},
+                {"Bear Egg", "Epic"},
+                {"Brr Brr Patapim Egg", "Legendary"},
+            }
+        },
+
+        Lake = {
+            Speed = 900,
+            Eggs = {
+                {"Frog Egg", "Common"},
+                {"Duckling Egg", "Common"},
+                {"Catfish Egg", "Uncommon"},
+                {"Turtle Egg", "Rare"},
+                {"Trulimero Trulicina Egg", "Epic"},
+                {"Swan Egg", "Epic"},
+                {"Axolotl Egg", "Legendary"},
+                {"Leviathan Egg", "Cosmic"},
+            }
+        },
+
+        Desert = {
+            Speed = 10000,
+            Eggs = {
+                {"Jerboa Egg", "Common"},
+                {"Fennec Egg", "Uncommon"},
+                {"Camel Egg", "Rare"},
+                {"Tob Tobi Tob Tob Egg", "Epic"},
+                {"Snake Egg", "Legendary"},
+                {"Sand Spider Egg", "Mythic"},
+                {"Scorpion Egg", "Mythic"},
+                {"Royal Sphinx Egg", "Cosmic"},
+            }
+        },
+
+        Jungle = {
+            Speed = 40000,
+            Eggs = {
+                {"Chimpanzee Egg", "Rare"},
+                {"Toucan Egg", "Rare"},
+                {"Crocodile Egg", "Epic"},
+                {"Gorilla Egg", "Legendary"},
+                {"Orangutini Ananassini Egg", "Legendary"},
+                {"Spider Egg", "Mythic"},
+                {"Tiger Egg", "Mythic"},
+                {"King Snake Egg", "Secret"},
+            }
+        },
+
+        Snow = {
+            Speed = 170000,
+            Eggs = {
+                {"Penguin Egg", "Rare"},
+                {"Walrus Egg", "Epic"},
+                {"Polar Bear Egg", "Legendary"},
+                {"Sabertooth Tiger Egg", "Mythic"},
+                {"Mammoth Egg", "Mythic"},
+                {"King Mammoth Egg", "Cosmic"},
+                {"Yeti Egg", "Secret"},
+                {"Ice Dragon Egg", "Eternal"},
+            }
+        },
+
+        Volcano = {
+            Speed = 700000,
+            Eggs = {
+                {"Lava Gecko Egg", "Rare"},
+                {"Lava Frog Egg", "Epic"},
+                {"Flaming Bull Egg", "Legendary"},
+                {"Lava Iguana Egg", "Legendary"},
+                {"Chillin Chilli Egg", "Mythic"},
+                {"Cerberus Egg", "Secret"},
+                {"Phoenix Egg", "Eternal"},
+                {"Lava Dragon Egg", "Eternal"},
+            }
+        },
+
+        ["Abyss Ocean"] = {
+            Speed = 2500000,
+            Eggs = {
+                {"Parrotfish Egg", "Rare"},
+                {"Swordfish Egg", "Epic"},
+                {"Shark Egg", "Legendary"},
+                {"Orca Egg", "Mythic"},
+                {"Whale Shark Egg", "Cosmic"},
+                {"Beluga Whale Egg", "Cosmic"},
+                {"Kraken Egg", "Secret"},
+                {"El Maja Egg", "Eternal"},
+            }
+        },
+
+        Prehistoric = {
+            Speed = 18000000,
+            Eggs = {
+                {"Dodo Egg", "Rare"},
+                {"Pterodactyl Egg", "Legendary"},
+                {"Ankylosaurus Egg", "Mythic"},
+                {"Triceratops Egg", "Cosmic"},
+                {"Bronto Egg", "Cosmic"},
+                {"T-Rex Egg", "Secret"},
+                {"Tralaledon Egg", "Secret"},
+                {"Mosasaurus Egg", "Eternal"},
+            }
+        },
+
+        Cosmic = {
+            Speed = 700000000,
+            Eggs = {
+                {"Centapede Egg", "Epic"},
+                {"Cosmic Gecko Egg", "Legendary"},
+                {"Cosmic Gorilla Egg", "Mythic"},
+                {"La Vacca Saturno Saturnita Egg", "Cosmic"},
+                {"Cosmic Skeleton Boss Egg", "Secret"},
+                {"Cosmic Dragon Egg", "Secret"},
+                {"Eternal Lunar Dragon Egg", "Eternal"},
+                {"Unicorn Egg", "Divine"},
+            }
+        },
+
+        ["Cherry Blossom"] = {
+            Speed = 2500000000,
+            Eggs = {
+                {"Crane Egg", "Epic"},
+                {"Salamander Egg", "Legendary"},
+                {"Red Panda Egg", "Mythic"},
+                {"Snowy Owl Egg", "Cosmic"},
+                {"Koi Egg", "Cosmic"},
+                {"Stag Egg", "Secret"},
+                {"Oni Tiger Egg", "Eternal"},
+                {"Kitsune Egg", "Divine"},
+            }
+        },
+
+        ["Titan Temple"] = {
+            Speed = 7000000000,
+            Eggs = {
+                {"Bladehide Egg", "Cosmic"},
+                {"Spideron Egg", "Legendary"},
+                {"Crustacia Egg", "Legendary"},
+                {"Mantaris Egg", "Cosmic"},
+                {"Rhinotaur Egg", "Cosmic"},
+                {"Mutant Shark Egg", "Secret"},
+                {"Gorilla King Egg", "Eternal"},
+                {"Nightflame Egg", "Divine"},
+            }
+        },
+
+        ["Angels & Demons"] = {
+            Speed = 20000000000,
+
+            Light = {
+                {"Light Dove Egg", "Common"},
+                {"Winged Lamb Egg", "Uncommon"},
+                {"Sacred Moth Egg", "Rare"},
+                {"Holy Peacock Egg", "Epic"},
+                {"Pure Jellyfish Egg", "Mythic"},
+                {"Centaur Egg", "Cosmic"},
+                {"Pegasus Egg", "Eternal"},
+                {"ArchAngel Egg", "Divine"},
+            },
+
+            Dark = {
+                {"Flame Sprite Egg", "Common"},
+                {"Toro Egg", "Uncommon"},
+                {"Imp Egg", "Rare"},
+                {"Demon Hound Egg", "Epic"},
+                {"Gargoyle Egg", "Mythic"},
+                {"RazorFang Egg", "Cosmic"},
+                {"Skeleton Horse Egg", "Eternal"},
+                {"World Burner Egg", "Divine"},
+            }
+        }
+    },
+
+    Rarities = {
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Epic",
+        "Legendary",
+        "Mythic",
+        "Cosmic",
+        "Secret",
+        "Eternal",
+        "Divine"
+    },
+
+    Events = {
+        ["Dr. Scramble's Revenge"] = {
+            Enabled = true,
+            Respawn = 1800
+        },
+
+        ["Extinction Egg"] = {
+            Enabled = true,
+            Limited = true
+        }
+    },
+
+    Rifts = {
+        ["Riftborn Egg"] = true,
+        ["Riftbeasts Egg"] = true,
+        ["Shattered Rift Egg"] = true
+    }
+}
+
+
+--==================================================
+-- CONFIG
+--==================================================
+
+local Config = {
+
+    AutoCollect = false,
+
+    AutoRift = false,
+
+    AutoEvent = false,
+
+    Speed = 1600,
+
+    SelectedZones = {},
+
+    SelectedRarities = {},
+
+    SelectedEggs = {}
+}
+
+
+--==================================================
+-- RARITY FILTER
+--==================================================
+
+local function IsRaritySelected(rarity)
+
+    if next(Config.SelectedRarities) == nil then
+        return true
+    end
+
+    return Config.SelectedRarities[rarity] == true
+end
+
+
+--==================================================
+-- EGG FILTER
+--==================================================
+
+local function IsEggSelected(eggName, rarity)
+
+    if not IsRaritySelected(rarity) then
+        return false
+    end
+
+    if next(Config.SelectedEggs) == nil then
+        return true
+    end
+
+    return Config.SelectedEggs[eggName] == true
+end
+
+
+--==================================================
+-- ZONE FILTER
+--==================================================
+
+local function IsZoneSelected(zoneName)
+
+    if next(Config.SelectedZones) == nil then
+        return true
+    end
+
+    return Config.SelectedZones[zoneName] == true
+end
+
+
+--==================================================
+-- FIND TARGETS
+--==================================================
+
+local function GetTargets()
+
+    local targets = {}
+
+    for zoneName, zoneData in pairs(EggDatabase.Zones) do
+
+        if IsZoneSelected(zoneName) then
+
+            for _, egg in ipairs(zoneData.Eggs or {}) do
+
+                local eggName = egg[1]
+                local rarity = egg[2]
+
+                if IsEggSelected(eggName, rarity) then
+
+                    table.insert(targets, {
+                        Zone = zoneName,
+                        Egg = eggName,
+                        Rarity = rarity,
+                        Speed = zoneData.Speed
+                    })
+
+                end
+            end
+        end
+    end
+
+    return targets
+end
+
+
+--==================================================
+-- EXAMPLE CONFIG
+--==================================================
+
+Config.SelectedZones = {
+    ["Cosmic"] = true,
+    ["Cherry Blossom"] = true,
+    ["Titan Temple"] = true,
+    ["Angels & Demons"] = true
+}
+
+Config.SelectedRarities = {
+    Cosmic = true,
+    Secret = true,
+    Eternal = true,
+    Divine = true
+}
+
+
+--==================================================
+-- DEBUG
+--==================================================
+
+for _, target in ipairs(GetTargets()) do
+
+    print(
+        "[TARGET]",
+        target.Zone,
+        "|",
+        target.Egg,
+        "|",
+        target.Rarity
+    )
+
+end
